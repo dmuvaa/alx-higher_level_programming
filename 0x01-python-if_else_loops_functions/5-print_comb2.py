@@ -10,3 +10,4 @@ while num < 100:
     print("{}".format(new_num), end="")
 
     num += 1
+print()
