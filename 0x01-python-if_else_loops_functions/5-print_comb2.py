@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-num = 1
+num = 0
 while num < 100:
     if num < 10:
         new_num = "0{}, ".format(str(num))
