@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 num = 1
 while num < 100:
     if num < 10:
