@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-for n in range(1, 100):
-    print(n, end=', ')
+num = 1
+newnum = '{}'
+while num < 100:
+    age = newnum.format(num)
+    print(age, end=", ")
+    num += 1
