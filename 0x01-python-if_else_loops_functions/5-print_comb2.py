@@ -7,6 +7,6 @@ while num < 100:
         new_num = "{}, ".format(str(num))
     else:
         new_num = "{}".format(str(num))
-        print("{}".format(new_num), end="")
+    print("{}".format(new_num), end="")
 
     num += 1
