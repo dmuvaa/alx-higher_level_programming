@@ -7,6 +7,9 @@ class Square:
     """rep a ssquare"""
 
     def __init__(self, size):
-        """Func to initialize size"""
+        """Func to initialize size
+        Args:
+            size (int): size of square
+        """
 
-    self.__size = size
+        self.__size = size
