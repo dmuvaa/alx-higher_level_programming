@@ -45,7 +45,7 @@ class Square:
             self.__size = value
 
     def my_print(self):
-        """public instance method that prints in stdout the square with the character."""
+        """method to prints in stdout the square with the character."""
 
         if not self.__size:
             print()
