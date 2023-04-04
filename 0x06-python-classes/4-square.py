@@ -12,7 +12,7 @@ class Square:
         """
 
         if not isinstance(size, int):
-            raise TypeError("size is integer")
+            raise TypeError("size is not integer")
         elif size < 0:
             raise ValueError("size can't be less than zero")
         else:
@@ -29,7 +29,18 @@ class Square:
 
     @property
     def size(self):
-        """ Method to returns the size value
-        """
+        """Method to returns the size value."""
 
         return self.__size
+
+    @size.setter
+    def size(self, value):
+        """method that sets the value size."""
+
+        if not isinstance(value, int):
+            raise TypeError("size is not int")
+        elif value < 0:
+            raise ValueError("Value can't be less than zero")
+        else:
+            self.__size = value
+
