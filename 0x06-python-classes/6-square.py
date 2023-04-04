@@ -47,6 +47,7 @@ class Square:
     @position.setter
     def position(self, value):
         """Method to returns the size value."""
+        
         if not isinstance(value, tuple):
             raise TypeError("size not an int")
         if len(value) != 2:
