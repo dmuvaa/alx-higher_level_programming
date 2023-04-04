@@ -7,7 +7,7 @@ class Square:
 
     def __init_-(self, size=0):
         """
-        Args: 
+        Args:
             size of square
         """
 
@@ -17,4 +17,3 @@ class Square:
             raise ValueError("size can't be less than zero")
         else:
             self.__size = size
-
