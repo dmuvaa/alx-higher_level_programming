@@ -5,18 +5,13 @@
 class Square:
     """Private instance attribute called size."""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0,0)):
         """
         Args:
             size of square
         """
-
-        if not isinstance(size, int):
-            raise TypeError("size is not integer")
-        elif size < 0:
-            raise ValueError("size can't be less than zero")
-        else:
-            self.__size = size
+            self.size = size
+            self.position = position
 
     def area(self):
         """
