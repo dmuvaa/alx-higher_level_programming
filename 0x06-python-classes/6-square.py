@@ -1,17 +1,18 @@
 #!/usr/bin/python3
+
 """class Square that defines a square based on previous square."""
 
 
 class Square:
     """Private instance attribute called size."""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Args:
             size of square
         """
-            self.size = size
-            self.position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """
@@ -38,6 +39,12 @@ class Square:
             raise ValueError("Value can't be less than zero")
         else:
             self.__size = value
+
+    @property
+    def size(position):
+        """method to get/set square position."""
+
+        return self.__position
 
     @position.setter
     def position(self, value):
