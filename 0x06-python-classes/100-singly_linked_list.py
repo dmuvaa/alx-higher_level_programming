@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+"""Define linked list class."""
+
+
 class Node:
     """Node in a singly linked list."""
 
