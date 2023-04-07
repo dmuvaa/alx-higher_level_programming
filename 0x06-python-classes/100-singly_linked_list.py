@@ -8,8 +8,8 @@ class Node:
         self.next_node = next_node
 
     @property
-    """node data."""
     def data(self):
+        """node data."""
 
         return self.__data
 
@@ -21,15 +21,14 @@ class Node:
         self.__data = value
 
     @property
-    """Set the next node"""
     def next_node(self):
+        """Set the node."""
 
         return (self.__next_node)
 
     @next_node.setter
     def next_node(self, value):
-
-        if not isinstance and not None(value, Node):
+        if not isinstance (value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
