@@ -65,14 +65,16 @@ class Square:
     def my_print(self):
         """method to prints in stdout the square with the character."""
 
+        print(self.__str())
+
+    def__str__(self):
         if self.size == 0:
-            print()
+            return ""
         else:
+            rows = []
             for i in range(self.position[1]):
-                print()
+                rows.append("")
             for i in range(0, self.size):
-                for k in range(self.position[0]):
-                    print(" ", end='')
-                for j in range(self.size):
-                    print("#", end='')
-                print()
+                row = " " * self.position[0] + "#" * self.size
+                rows.append(row)
+            return "\n".join(rows)               
