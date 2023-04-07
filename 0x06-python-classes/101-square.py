@@ -67,7 +67,8 @@ class Square:
 
         print(self.__str())
 
-    def__str__(self):
+    def __str__(self):
+        """define square representation."""
         if self.size == 0:
             return ""
         else:
@@ -77,4 +78,4 @@ class Square:
             for i in range(0, self.size):
                 row = " " * self.position[0] + "#" * self.size
                 rows.append(row)
-            return "\n".join(rows)               
+            return "\n".join(rows)
