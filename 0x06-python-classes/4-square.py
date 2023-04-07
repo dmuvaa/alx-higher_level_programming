@@ -12,7 +12,7 @@ class Square:
         """
 
         if not isinstance(size, int):
-            raise TypeError("size is not integer")
+            raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size can't be less than zero")
         else:
@@ -38,7 +38,7 @@ class Square:
         """method that sets the value size."""
 
         if not isinstance(value, int):
-            raise TypeError("size is not int")
+            raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("Value can't be less than zero")
         else:
