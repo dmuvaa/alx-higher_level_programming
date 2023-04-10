@@ -53,12 +53,16 @@ class Rectangle:
 
     def __str__(self):
         """define the representation of the the rectangle."""
-        if self.width == 0 or self.height == 0:
-            return ""
+        rectangle = ""
 
-        rows = [("#" * self.width) for _ in range(self.height)]
-        return "\n".join(rows)
+        if self.width == 0 or self.height == 0:
+            return rectangle
+
+        for i in range(self.height):
+            rectangle += ("#" * self.width) + "\n"
+
+        return rectangle[:-1]
 
     def __repr__(self):
-        """Returns representation of rectangle to use for print()."""
-        return str(self)
+        """Return string representation using print()."""
+        return "Rectangle({}, {})".format(self.width, self.height)
