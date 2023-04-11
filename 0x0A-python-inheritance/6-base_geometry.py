@@ -5,5 +5,5 @@
 
 class BaseGeometry:
     def area(self):
-    """Class based on previous task."""
-    raise Exception("area() is not implemented")
+        """Class based on previous task."""
+        raise Exception("area() is not implemented")
