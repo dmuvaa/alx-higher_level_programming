@@ -2,7 +2,8 @@
 
 """creates a locked class."""
 
+
 class LockedClass:
-    """Class that prevents the user from dynamically creating new instance attributes."""
+    """Class to prevent user from creating new instance attributes."""
 
     __slots__ = ["first_name"]
