@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""Imports multiple python modules."""
+"""This module imports multiple Python modules and 
+defines a function to add items to a JSON file."""
 
 
 import sys
