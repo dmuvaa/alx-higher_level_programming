@@ -5,22 +5,19 @@ defines a function to add items to a JSON file."""
 
 
 import sys
-from typing import List
-from os import path
-from save_to_json_file import save_to_json_file
-from load_from_json_file import load_from_json_file
+from json import dump, load
 
+if __name__ = "__main__":
+    """allows a module to be run as a script."""
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+            __import__('6-load_from_json_file').load_from_json_file
 
-def add_item(args: List[str]) -> None:
-    """Function that adds all argument from a Pythhon List."""
-    filename = "add_item.json"
-    if path.exists(filename):
-        items = load_from_json_file(filename)
-    else:
+    try:
+        """load the contents of the file add_item.json into a list."""
+        items = load_from_json_file("add_item.json")
+    except FileNotFoundError:
         items = []
-    items += args[1:]
-    save_to_json_file(items, filename)
 
-
-if __name__ == "__main__":
-    add_item(sys.argv)
+    items.extend(sys.argv[1:])
+    save_to_json_file(items, "add_item.json")
