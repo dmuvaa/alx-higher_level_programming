@@ -1,1 +1,7 @@
 Testing for "def add_integer" function
+
+>>> adding_integer = __import__('0-add_integer').add_integer
+>>> adding_integer(2,5)
+7
+>>> adding_integer(3.6, 4.9)
+7
