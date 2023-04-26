@@ -5,3 +5,24 @@ Testing for "def add_integer" function
 7
 >>> adding_integer(3.6, 4.9)
 7
+>>> adding_integer(None)
+Traceback (most recent call last)
+TypeError: a must be an integer
+
+>>> adding_integer(5)
+103
+>>> adding_integer("denis", "muvaa")
+Traceback (most recent call last)
+TypeError: a must be an integer
+>>> adding_integer(4, float('inf'))
+Traceback (most recent call last)
+OverflowError: cannot convert float infinity to integer
+>>> adding_integer(float('inf'))
+Traceback (most recent call last)
+OverflowError: cannot convert float infinity to integer
+>>> adding_integer(float('nan'))
+Traceback (most recent call last)
+ValueError: cannot convert float NaN to integer
+>>> adding_integer(8, float('nan'))
+Traceback (most recent call last)
+ValueError: cannot convert float NaN to integer
