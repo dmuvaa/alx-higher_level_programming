@@ -8,7 +8,7 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 >>> dividing_matrix([[5, 6, 7], [2, 3, 4]], "two")
 Traceback (most recent call last):
-TypeError: div must be an integer
+TypeError: div must be a number
 >>> dividing_matrix([[5, 6, 7], [2, 3, 4]], 2.5)
 [[2.0, 2.4, 2.8], [0.8, 1.2, 1.6]]
 >>> dividing_matrix([[], [8, 6, 4]], 2)
