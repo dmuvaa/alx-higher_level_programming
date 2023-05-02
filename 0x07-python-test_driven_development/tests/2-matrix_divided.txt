@@ -14,6 +14,6 @@ TypeError: div must be a number
 >>> dividing_matrix([[], [8, 6, 4]], 2)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> dividing_matrix([[5, 6, 7], [2, 4]], 2)
+>>> dividing_matrix([[5, 6, 7], [2, 4]], 0)
 Traceback (most recent call last):
 TypeError: Each row of the matrix must have the same size
