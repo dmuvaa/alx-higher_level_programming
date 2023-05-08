@@ -28,15 +28,30 @@ class TestMaxInteger(unittest.TestCase):
         one_element = [1]
         self.assertEqual(max_integer(one_element), 1)
 
-    def test_string_list(self):
-        """function that tests if the list is a string."""
-        isstr = ["AlX", "Dennis", "Engineer"]
-        self.assertEqual(max_integer(isstr), 'r')
+    def test_max_beginning(self):
+        """test if string has max at the beginning."""
+        max_element = [5, 4, 3, 2, 1]
+        self.assertEqual(max_integer(max_element), 5)
 
-    def test_mixed_list(self):
-        """function that checks if the list is a mix of int and str."""
-        mixed_list = ["Max", 1, "Verstappen"]
-        self.assertEqual(max_integer(mixed_list))
+    def test_max_end(self):
+        """test is the max is at the end."""
+        max_end = [1, 2, 3, 4, 5]
+        self.assertEqual(max_integer(max_end), 5 )
+
+    def test_max_middle(self):
+        """funtion that tests is max is at midddle."""
+        max_middle = [1, 2, 5, 3, 4]
+        self.assertEqual(max_integer(max_element), 5)
+
+    def test_number_negative(self):
+        """function that tests if the list has a negative number."""
+        is_neg = [1, -1, 5, 6]
+        self.assertEqual(max_integer(is_neg), -1)
+
+    def test_neg_only(self):
+        """function that checks if the list has negative numbers only."""
+        neg_only = [-5, -4, -3, -2, -1]
+        self.assertEqual(max_integer(neg_only))
 
 if __name__ == '__main__':
     unittest.main()
