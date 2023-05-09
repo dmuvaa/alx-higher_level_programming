@@ -2,7 +2,8 @@
 
 """creates a class."""
 
-from base import Base
+from .base import Base
+
 
 class Rectangle(Base):
     """class named Rectangle."""
