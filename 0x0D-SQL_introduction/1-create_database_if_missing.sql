@@ -1,2 +1,2 @@
 -- script that creates a database
-CREATE TABLE;
+CREATE TABLE hbtn_0c_0;
