@@ -1,3 +1,4 @@
+-- temperature averages
 SELECT city,
 AVG(value) AS avg_temp
 FROM temperatures
