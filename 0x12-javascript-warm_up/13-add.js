@@ -1,12 +1,5 @@
 #!/usr/bin/node
 
-fuction add(a, b) {
-  let num1 = parseInt(a);
-  let num2 = parseInt(b);
-
-  if (isNaN(num1) || isNaN(num2)) {
-    return "isNaN";
-  }
-
+exports.add = fuction add(num1, num2) {
   return num1 + num2;
 }
