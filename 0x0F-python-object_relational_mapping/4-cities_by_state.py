@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
-"""imports a module"""
+"""imports a module."""
 
 
 import MySQLdb
 from sys import argv
-
 
 if __name__ == '__main__':
     """main."""
