@@ -9,15 +9,13 @@ from sys import argv
 if __name__ == 'main':
     """main."""
     conn = MySQLdb.connect(host="localhost", port=3306,
-                           user=argv[1], password=argv[2],
-                           db=argv[3], state_name_searched=argv[4],
-                           charset="utf8")
+                           user=argv[1], passwd=argv[2],
+                           db=argv[3], charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4])
+    cur.execute(query)
     rows = cur.fetchall()
     for row in rows:
-        if row[1] == state_name_searched:
-            print(row)
-
+        print(row)
     cur.close()
     db.close()
