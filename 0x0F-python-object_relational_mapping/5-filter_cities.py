@@ -13,6 +13,9 @@ if __name__ == '__main__':
                          db=argv[3], charset="utf8")
 
     cur = conn.cursor()
+    
+    state_name = argv[4]
+
     cur.execute("SELECT cities.id, cities.name \
                 FROM cities \
                 JOIN states ON cities.state_id = states.id \
@@ -21,7 +24,7 @@ if __name__ == '__main__':
 
     rows = cur.fetchall()
 
-    for row in rows:
-        print(row)
+    print(", ".join(row[0] for row in rows))
+
     cur.close()
     conn.close()
