@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 """imports a module."""
-"""script that lists all cities and their states from the database"""
 
 
 import MySQLdb
