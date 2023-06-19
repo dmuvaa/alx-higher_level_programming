@@ -13,8 +13,8 @@ if __name__ == '__main__':
                            db=argv[3], charset="utf8")
 
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC", \
-            (argv[4],))
+    cur.execute("SELECT * FROM states \
+                WHERE name = %s ORDER BY id ASC", (argv[4],))
     rows = cur.fetchall()
     for row in rows:
         print(row)
