@@ -3,9 +3,14 @@
 """imports a module"""
 
 import requests
-import sys
+from sys import argv
 
-if len(sys.argv) == 2:
-    url = sys.argv[1]
+
+if __name__ == "__main__":
+    """main"""
+    url = "https://api.github.com/repos/{}/{}/commits".format(argv[2], argv[1])
     response = requests.get(url)
-    print(response.headers.get('X-Request-Id'))
+    commits = response.json()
+    for commit in commits[:10]:
+        print(commit.get("sha"), end=": ")
+        print(commit.get('commit').get('author').get('name'))
