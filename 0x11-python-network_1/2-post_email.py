@@ -7,6 +7,7 @@ import sys
 import urllib.parse
 import urllib.request
 
+
 def send_post_request(url, email):
     """creaates a func"""
     data = urllib.parse.urlencode({'email': email})
