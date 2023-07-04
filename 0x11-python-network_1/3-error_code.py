@@ -17,6 +17,7 @@ def send_request(url):
     except urllib.error.HTTPError as e:
         print(f"Error code: {e.code}")
 
+
 if __name__ == "__main__":
     """main"""
     send_request(sys.argv[1])
