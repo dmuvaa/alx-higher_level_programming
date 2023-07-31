@@ -1,1 +1,1 @@
-Repo for All ALX High Level Programming Tasks - Mostly Python
+Repo for All ALX High Level Programming Tasks - Python
